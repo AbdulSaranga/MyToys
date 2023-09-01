@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.add-task{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+#txt, #btn{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+#txt{
+    width: 20rem;
+    border-radius: 1rem;
+}
+#btn{
+    width: 50px;
+    height: 50px;
+    background-color: darkslategray;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#btn:hover{
+    background-color: darkcyan;
+}
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+#to-do-list li{
+    list-style-type: none;
+    font-size: 13pt;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .4s;
+}
+#to-do-list li:hover{
+    background-color: rgb(26, 24, 24);
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+#btn-ok{
+    border: none;
+    background-color: green;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+#btn-ok:hover{
+    background-color: rgb(0, 75, 0);
+}
