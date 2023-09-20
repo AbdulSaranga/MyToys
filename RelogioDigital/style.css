@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@500&family=Raleway:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    position: relative;
+}
+.hero{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(227, 82, 240, 0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+.clock span{
+    display: inline-block;
+    font-size: 65px;
+    width: 80px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.clock span::after{
+    font-size: 15px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+#hours::after{
+    content: 'HOURS';
+}
+#minutes::after{
+    content: 'MINUTES';
+}
+#seconds::after{
+    content: 'SECONDS';
+}
+.hero::before{
+    content: '';
+    width: 125px;
+    height: 125px;
+    background: #f41b75;
+    position: absolute;
+    left: -10%;
+    top: -50%;
+    z-index: -1;
+    border-radius: 10px;
+}
+.hero::after{
+    content: '';
+    width: 125px;
+    height: 125px;
+    background: #c026d3;
+    position: absolute;
+    right: -10%;
+    bottom: -50%;
+    z-index: -1;
+    border-radius: 10px;
+}
